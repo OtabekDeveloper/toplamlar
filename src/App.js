@@ -123,19 +123,21 @@ function App() {
               value={second}
               onChange={(e)=> {setSecond(e.target.value)}}
             />
+            <div className="selectDrap">
             <select 
-              className='form-select w-75 my-3' 
+              className=' form-select w-80 my-3' 
               value={amal}
               onChange={(e)=> {
                 console.log(e.target.value, "ddd")
                 setAmal(e.target.value)}}
             >
-              <option value="0">(+) Бирлашмага ∪ </option>
-              <option value="1">(-) Кесишмага ∩ </option>
+              <option  value="0">Бирлашмага ∪ </option>
+              <option value="1">Кесишмага ∩ </option>
               <option value="2"> A \ B Айирмаци</option>
               <option value="3"> B \ A Айирмаци </option>
               <option value="4"> Симметрик айирма ∆ </option>
             </select>
+            </div>
             <button className='btn btn-primary' onClick={()=>hisobla()}>Натижа</button>
             <h1>{`{${natija || "Натижа"}}`}</h1>
           </div>

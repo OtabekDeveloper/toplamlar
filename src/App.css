@@ -20,6 +20,18 @@ input , select{
     font-size: 25px;
     color: #444242;
 }
+@media screen and (max-width: 450px) {
+  .foo {
+    width: 300px !important;
+    }
+    .selectDrap{
+       padding-left: 65px !important;
+    }
+}
+.selectDrap{
+    padding-left: 60px;
+    padding-right: 50px;
+ }
 
 .wrap {
     background-image: url("./fon3.jpg");
@@ -29,4 +41,8 @@ input , select{
     align-items:flex-start;
     background-size: cover;
     background-repeat: no-repeat;
+}
+select{
+    font-size: 17px !important;
+    width: 160px !important;
 }
