@@ -100,12 +100,12 @@ function App() {
         <div className="content">
         <div className="title my-5">
         <div className="alert bg-white text-center fw-bold foo" role="alert">
-          Ikki to'plam ustida amallar
+          Икки топлам устида aмaллaр
         </div>
       </div>
       <div className="row d-flex justify-content-center">
           <div className="col-md-5 text-center">
-            <h2 className='text-white'>Birinchi to'plam</h2>
+            <h2 className='text-white'>Бирламrи топлам</h2>
             <input
               className='form-control my-3'
               placeholder='example  1,2,3,4' 
@@ -114,7 +114,7 @@ function App() {
               value={first}
               onChange={(e)=> {setFirst(e.target.value)}}
             />
-            <h2>Ikkinchi to'plam</h2>
+            <h2>Иккинrи топлам</h2>
             <input 
               className='form-control my-3'
               type="text"
@@ -130,14 +130,14 @@ function App() {
                 console.log(e.target.value, "ddd")
                 setAmal(e.target.value)}}
             >
-              <option value="0">(+) Birlashma </option>
-              <option value="1">(-) Kesishma </option>
-              <option value="2"> A \ B ni ayirmasi</option>
-              <option value="3"> B \ A ni ayirmasi </option>
-              <option value="4"> ∆ Simmetriya </option>
+              <option value="0">(+) Бирлашмага ∪ </option>
+              <option value="1">(-) Кесишмага ∩ </option>
+              <option value="2"> A \ B Айирмаци</option>
+              <option value="3"> B \ A Айирмаци </option>
+              <option value="4"> Симметрик айирма ∆ </option>
             </select>
-            <button className='btn btn-primary' onClick={()=>hisobla()}>Natija</button>
-            <h1>{`{${natija || "Natija"}}`}</h1>
+            <button className='btn btn-primary' onClick={()=>hisobla()}>Натижа</button>
+            <h1>{`{${natija || "Натижа"}}`}</h1>
           </div>
       </div>
         </div>
