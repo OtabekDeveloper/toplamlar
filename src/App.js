@@ -5,9 +5,11 @@ function App() {
   const [second , setSecond] = useState('')
   const [amal , setAmal] = useState('0')
   const [natija , setNatija] = useState('')
+  let array1 = []
+  let array2 = [] 
   const hisobla = () => {
-    let array1 = first.split(",")
-    let array2 = second.split(",")  
+    array1 = first.split(",")
+    array2 = second.split(",")  
     let d= []
     let foo = []
     let fooA = []
@@ -94,15 +96,16 @@ function App() {
     }
   }
   return (
-    <> 
-      <div className="title my-5">
-        <div className="alert alert-primary text-center foo" role="alert">
-          To'plamlar ustida amallar
+    <div className='wrap'> 
+        <div className="content">
+        <div className="title my-5">
+        <div className="alert bg-white text-center fw-bold foo" role="alert">
+          Ikki to'plam ustida amallar
         </div>
       </div>
       <div className="row d-flex justify-content-center">
           <div className="col-md-5 text-center">
-            <h2>Birinchi to'plam</h2>
+            <h2 className='text-white'>Birinchi to'plam</h2>
             <input
               className='form-control my-3'
               placeholder='example  1,2,3,4' 
@@ -121,24 +124,24 @@ function App() {
               onChange={(e)=> {setSecond(e.target.value)}}
             />
             <select 
-              className='form-select w-25' 
+              className='form-select w-75 my-3' 
               value={amal}
               onChange={(e)=> {
                 console.log(e.target.value, "ddd")
                 setAmal(e.target.value)}}
             >
-              <option value="0"> + </option>
-              <option value="1"> - </option>
-              <option value="2"> A \ B </option>
-              <option value="3"> B \ A </option>
-              <option value="4"> ∆ </option>
+              <option value="0">(+) Birlashma </option>
+              <option value="1">(-) Kesishma </option>
+              <option value="2"> A \ B ni ayirmasi</option>
+              <option value="3"> B \ A ni ayirmasi </option>
+              <option value="4"> ∆ Simmetriya </option>
             </select>
             <button className='btn btn-primary' onClick={()=>hisobla()}>Natija</button>
             <h1>{`{${natija || "Natija"}}`}</h1>
           </div>
-          
       </div>
-    </>
+        </div>
+    </div>
   );
 }
 

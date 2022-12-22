@@ -1,7 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1 , p, h2 {
+    color: white
+}
+input , select{
+    font-size: 20px!important;
+    font-weight: 700!important;
+    color: #444242!important;
+}
+
 .title {
    text-align: center;
 }
 .foo {
     width: 700px;
     margin: 0 auto;
+    font-size: 25px;
+    color: #444242;
+}
+
+.wrap {
+    background-image: url("./fon3.jpg");
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
