@@ -7,6 +7,11 @@ function App() {
   const [natija , setNatija] = useState('')
   let array1 = []
   let array2 = [] 
+  const clear = () => {
+    setFirst('')
+    setSecond('')
+    setNatija('')
+  }
   const hisobla = () => {
     array1 = first.split(",")
     array2 = second.split(",")  
@@ -108,7 +113,7 @@ function App() {
             <h2 className='text-white'>Бирламrи топлам</h2>
             <input
               className='form-control my-3'
-              placeholder='example  1,2,3,4' 
+              placeholder='мисол  1,2,3,4' 
               type="text"
               name='first'
               value={first}
@@ -118,7 +123,7 @@ function App() {
             <input 
               className='form-control my-3'
               type="text"
-              placeholder='example  1,2,3,4'
+              placeholder='мисол  1,2,3,4'
               name='second'
               value={second}
               onChange={(e)=> {setSecond(e.target.value)}}
@@ -133,12 +138,13 @@ function App() {
             >
               <option  value="0">Бирлашмага ∪ </option>
               <option value="1">Кесишмага ∩ </option>
-              <option value="2"> A \ B Айирмаци</option>
-              <option value="3"> B \ A Айирмаци </option>
-              <option value="4"> Симметрик айирма ∆ </option>
+              <option value="2">A \ B Айирмаци</option>
+              <option value="3">B \ A Айирмаци </option>
+              <option value="4">Симметрик айирма ∆ </option>
             </select>
             </div>
-            <button className='btn btn-primary' onClick={()=>hisobla()}>Натижа</button>
+            <button className='btn btn-primary mx-3' onClick={()=>hisobla()}>Натижа</button>
+            <button className='btn btn-primary mx-3' onClick={()=>clear()}>Тозалаш</button>
             <h1>{`{${natija || "Натижа"}}`}</h1>
           </div>
       </div>
