@@ -20,6 +20,11 @@ input , select{
     font-size: 25px;
     color: #444242;
 }
+select{
+    font-size: 17px !important;
+    width: 240px !important;
+}
+
 @media screen and (max-width: 450px) {
   .foo {
     width: 300px !important;
@@ -29,7 +34,7 @@ input , select{
     }
 }
 .selectDrap{
-    padding-left: 60px;
+    padding-left: 15px;
     padding-right: 50px;
  }
 
@@ -59,10 +64,7 @@ input , select{
     opacity: 0.94;
 }
 
-select{
-    font-size: 17px !important;
-    width: 160px !important;
-}
+
 
 input {
     padding-left: 50px!important;

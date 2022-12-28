@@ -24,7 +24,6 @@ function App() {
       d = c.filter((item, pos) => c.indexOf(item) === pos);
       setNatija(d);
     }
-
     if (amal == "2") {
       foo = [];
       if (array1.length >= array2.length) {
@@ -107,17 +106,16 @@ function App() {
       <div className="content">
         <div className="title my-5">
           <div className="alert bg-white text-center fw-bold foo" role="alert">
-            Икки топлам устида aмaллaр
+            Ikki to'plam ustida amallar
           </div>
         </div>
         <div className="row d-flex justify-content-center">
           <div className="col-md-5 text-center">
-            <h2 className="text-white">Бирламrи топлам</h2>
             <div className="one">
               <h4>A = </h4>
               <input
                 className="form-control my-3"
-                placeholder="мисол  1,2,3,4"
+                placeholder="misol  1,2,3,4"
                 type="text"
                 name="first"
                 value={first}
@@ -126,13 +124,12 @@ function App() {
                 }}
               />
             </div>
-            <h2>Иккинrи топлам</h2>
             <div className="one">
               <h4>B = </h4>
             <input
               className="form-control my-3"
               type="text"
-              placeholder="мисол  1,2,3,4"
+              placeholder="misol  1,2,3,4"
               name="second"
               value={second}
               onChange={(e) => {
@@ -142,27 +139,27 @@ function App() {
             </div>
             <div className="selectDrap">
               <select
-                className=" form-select w-80 my-3"
+                className="form-select my-3"
                 value={amal}
                 onChange={(e) => {
                   setAmal(e.target.value);
                 }}
               >
-                <option value="1">Бирлашмага ∪ </option>
-                <option value="2">Кесишмага ∩ </option>
-                <option value="3">A \ B Айирмаци</option>
-                <option value="4">B \ A Айирмаци </option>
-                <option value="5">Симметрик айирма ∆ </option>
+                <option value="1">BIRLASHMA ( ∪ ) </option>
+                <option value="2">KESISHMA ∩ </option>
+                <option value="3">AYIRMA A \ B</option>
+                <option value="4">AYIRMA B \ A</option>
+                <option value="5">SIMMETRIK AYIRMA ∆ </option>
               </select>
             </div>
             <button className="btn btn-primary mx-3" onClick={() => hisobla()}>
-              Натижа
+              NATIJA
             </button>
             <button className="btn btn-primary mx-3" onClick={() => clear()}>
-              Тозалаш
+              TOZALASH
             </button>
             <h1>{
-            amal=="1"?"A U B":amal=="2"?"A ∩ B":amal=="3"?"A \ B":amal=="4"?"B \ A":amal=="5"?"A ∆ B":""}  {`{${natija.length>0?natija:"Ø" || ""}}`}</h1>
+            amal=="1"?"A ∪ B =":amal=="2"?"A ∩ B =":amal=="3"?"A \ B =":amal=="4"?"B \ A =":amal=="5"?"A ∆ B =":""}  {`{${natija.length>0?natija:"Ø" || ""}}`}</h1>
           </div>
         </div>
       </div>
