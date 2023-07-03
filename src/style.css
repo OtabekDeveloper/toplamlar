@@ -1,0 +1,110 @@
+.kasr1 {
+    width: 40px;
+}
+
+.full {
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    padding-top: 30vh;
+}
+
+.sonlar {
+    width: 35px;
+    margin-left: 2px;
+    padding-left: 5px;
+}
+
+hr {
+    margin: 5px 3px;
+    height: 2px!important;
+    color: black;
+    opacity: 0.5;
+}
+
+.na {
+    padding: 20px 0px;
+}
+
+.row {
+    --bs-gutter-x: 0!important
+}
+
+.sele {
+    margin: 20px 15px;
+    text-align: center;
+    width: 250px;
+}
+
+button {
+    margin-left: 70px;
+    padding: 10px 40px;
+    font-size: 20px;
+}
+
+.natija {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.kas1 {
+    width: 40px;
+}
+
+.korsat {
+    position: absolute;
+    transform: rotate(-34deg);
+    border-bottom: 1px solid;
+    top: -15px;
+    padding: 0 6px;
+}
+
+.amall {
+    margin-bottom: 15px;
+}
+
+.chiziq {
+    position: relative;
+}
+
+.chiziq::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    transform: rotate(-34deg);
+    top: 15px;
+    left: 0;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+.bol1 {
+    position: absolute;
+    font-size: 15px;
+    top: -10px;
+    left: 2px;
+}
+
+.bol2 {
+    position: absolute;
+    font-size: 15px;
+    bottom: -30px;
+    right: 0px;
+}
+
+select {
+    width: 50px;
+    font-size: 20px!important;
+}
+
+@media only screen and (max-width: 600px) {
+    .full {
+      padding-left: 40px;
+    }
+  }

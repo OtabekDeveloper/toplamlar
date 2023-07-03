@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./App.css";
+// import "./App.css";
 function App() {
   const [first, setFirst] = useState("");
   const [second, setSecond] = useState("");
@@ -159,7 +159,8 @@ function App() {
               TOZALASH
             </button>
             <h1>{
-            amal=="1"?"A ∪ B =":amal=="2"?"A ∩ B =":amal=="3"?"A \ B =":amal=="4"?"B \ A =":amal=="5"?"A ∆ B =":""}  {`{${natija.length>0?natija:"Ø" || ""}}`}</h1>
+              amal=="1"?"A ∪ B =":amal=="2"?"A ∩ B =":amal=="3"?"A \\ B =":amal=="4"?"B \\ A =":amal=="5"?"A ∆ B =":""}  {`{${natija.length>0?natija:"Ø" || ""}}`}
+            </h1>
           </div>
         </div>
       </div>
